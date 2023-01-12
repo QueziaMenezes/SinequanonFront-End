@@ -1,0 +1,16 @@
+.emailSenhaArea {
+    position: absolute;
+    width: 30vw;
+    height: 16vh;
+    left: 15%;
+    top: 27%;
+}
+
+.botaoArea {
+    position: absolute;
+    width: 17vw;
+    height: 13vh;
+    left: 35%;
+    top: 78%;
+    /* background: #D9D9D9;   */
+}
