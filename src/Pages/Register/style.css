@@ -1,19 +1,10 @@
-.cadastroArea {
-    position: absolute;
-    width: 28%;
-    height: 50%;
-    align-items: center;
-    justify-content: center;
-    left: 35%;
-    top: 18%;
+#anchorsBotaoRegister {
+    flex-direction: row;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.5s;
 }
 
-.fotoArea {
-    position: absolute;
-    width: 12%;
-    height: 20%;
-    left: 65%;
-    top: 25%;
-    box-shadow: 0.5vh 0.5vh 0.5vh rgba(0, 0, 0, 0.25);
-    border-radius: 50%;
+#anchorsBotaoRegister:hover {
+    box-shadow: 0 0.5em 0.9em -0.4em;
+    cursor: pointer;
+    transform: translateY(-0.2em);
 }

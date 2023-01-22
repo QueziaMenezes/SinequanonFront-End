@@ -1,16 +1,10 @@
-.emailArea {
-    position: absolute;
-    width: 30vw;
-    height: 16vh;
-    left: 15%;
-    top: 27%;
+#anchorsBotaoRecuperar {
+    flex-direction: row;
+    transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.5s;
 }
 
-.botaoEnviar {
-    position: absolute;
-    width: 17vw;
-    height: 13vh;
-    left: 35%;
-    top: 78%;
-    /* background: #D9D9D9;   */
+#anchorsBotaoRecuperar:hover {
+    box-shadow: 0 0.5em 0.9em -0.4em;
+    cursor: pointer;
+    transform: translateY(-0.2em);
 }

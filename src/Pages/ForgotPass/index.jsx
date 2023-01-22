@@ -1,9 +1,14 @@
 import * as React from "react";
 import { Gradient } from "../../Components/Container/style";
 import {
-    BotaoEnviar,
-  PaperLogin,
-  TemaPaper,
+  AreaBotaoRecuperar,
+  AreaInputRecuperar,
+  AreaPaperRecuperar,
+  AreaTituloRecuperar,
+  AreaTotalRecuperar,
+  BotaoRecuperar,
+  PaperRecuperar,
+  TituloPaperRecuperar
 } from "./style.js";
 import { Link, useNavigate } from "react-router-dom";
 import { Input } from "@mui/material";
@@ -16,10 +21,14 @@ import "./style.css";
   const navigate = useNavigate();
 
   return (
+    <AreaTotalRecuperar>
     <Gradient>
-      <PaperLogin>
-        <TemaPaper>Recuperar Senha</TemaPaper>
-        <div className="emailArea">
+        <AreaTituloRecuperar>
+        <TituloPaperRecuperar>RECUPERAR SENHA</TituloPaperRecuperar>
+        </AreaTituloRecuperar>
+        <AreaPaperRecuperar>
+        <PaperRecuperar>
+        <AreaInputRecuperar>
           <Input
             sx={{ minWidth: "100%", top: "10%" }}
             placeholder={"  Insira seu e-mail cadastrado"}
@@ -28,11 +37,15 @@ import "./style.css";
             sx={{ minWidth: "100%", top: "30%" }}
             placeholder={" Confirme o e-mail digitado"}
           ></Input>
-        </div>
+        </AreaInputRecuperar>
+        </PaperRecuperar>
+        </AreaPaperRecuperar>
+        <AreaBotaoRecuperar>
         <Link to={"/Login"}>
-          <BotaoEnviar>ENVIAR</BotaoEnviar>
+          <BotaoRecuperar id={"anchorsBotaoRecuperar"}>ENVIAR</BotaoRecuperar>
         </Link>
-      </PaperLogin>
+        </AreaBotaoRecuperar>
     </Gradient>
+    </AreaTotalRecuperar>
   );
 };
